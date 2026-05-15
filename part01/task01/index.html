@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>PixiJS Rectangle</title>
+    <script src="https://cdn.jsdelivr.net/npm/pixi.js@8.x/dist/pixi.min.js"></script>
+</head>
+
+<body>
+    <script>
+        (async () => {
+            const app = new PIXI.Application();
+            await app.init({ width: 640, height: 360, backgroundColor: 0x1099bb });
+            document.body.appendChild(app.canvas);
+
+            const rect = new PIXI.Graphics();
+            rect.rect(-50, -50, 200, 100);
+            rect.fill(0xff0000); 
+            
+            rect.x = app.screen.width / 2;
+            rect.y = app.screen.height / 2;
+            
+            app.stage.addChild(rect);
+
+            app.ticker.add((ticker) => {
+                rect.rotation += 0.05 * ticker.deltaTime;
+            });
+        })();
+    </script>
+</body>
+</html>
