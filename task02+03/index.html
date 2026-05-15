@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Тест CORS</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <h1>Консоль разработчика (F12)</h1>
+
+    <script>
+        axios.get('https://vk.com')
+            .then(res => console.log(res.data))
+            .catch(err => console.error(err.message));
+
+        axios.get('https://json.geoiplookup.io/')
+            .then(res => console.log(res.data.ip))
+            .catch(err => console.error(err.message));
+    </script>
+</body>
+</html>
