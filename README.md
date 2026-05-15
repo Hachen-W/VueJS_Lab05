@@ -58,6 +58,18 @@ Failed to load resource: net::ERR_FAILED
 
 При отправке запроса через Postman на https://json.geoiplookup.io/ есть заголовки, связанные с CORS (Access-Control-Allow-Origin: *)
 
-## Объяснение результатов запросов к geoiplookup.io
+## Vue Introduction
 
-## Анализ заголовков ответа в Postman
+Создание проекта:
+```bash
+npm init vue@latest
+```
+
+Установка зависимостей и запуск сервера:
+```bash
+cd task03-09
+npm install
+npm run dev
+```
+
+
