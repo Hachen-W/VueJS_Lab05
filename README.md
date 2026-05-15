@@ -60,6 +60,8 @@ Failed to load resource: net::ERR_FAILED
 
 ## Vue Introduction
 
+Данная часть выполнялась в директории part02
+
 Создание проекта:
 ```bash
 npm init vue@latest
@@ -72,4 +74,18 @@ npm install
 npm run dev
 ```
 
+## Advanced Vue
 
+Данная часть выполнялась в директории part03
+
+Создание проекта:
+```bash
+npm init vue@latest
+```
+
+Установка зависимостей и запуск сервера:
+```bash
+cd task03-09
+npm install
+npm run dev
+```
